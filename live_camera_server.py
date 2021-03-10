@@ -11,4 +11,4 @@ def stream2():
     return render_template('stream2.html')
 
 if __name__=="__main__":
-    app.run('0.0.0.0', 8081, debug=True)
+    app.run('0.0.0.0', 8082, debug=True)
