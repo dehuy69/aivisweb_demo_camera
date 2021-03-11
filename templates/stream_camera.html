@@ -15,16 +15,12 @@
 </head>
 
 <body>
-<div class="d-block">
-<video id='hls-example' class="video-js vjs-default-skin" width="960" height="540" controls>
-    <source type="application/x-mpegURL" src="/static/video/video.m3u8">
+<div class="w-100">
+    <video id='hls-example' class="video-js vjs-default-skin" width="960" height="540" controls>
+        <source type="application/x-mpegURL" src="/static/video/video.m3u8">
+
+    </video>
 </div>
-    <!--
-<source type="application/x-mpegURL" src="http://ip-address/path/to/ouput/file-name.m3u8">
--->
-
-</video>
-
 <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
 <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
@@ -32,6 +28,7 @@
 <script>
         var player = videojs('hls-example');
         player.play();
+
 
 </script>
 
