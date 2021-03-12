@@ -3,11 +3,11 @@ from flask import Flask, render_template
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
-@app.route('/')
+@app.route('/test')
 def stream():
     return render_template('stream_camera.html')
 
-@app.route('/test')
+@app.route('/')
 def stream2():
     return render_template('stream2.html')
 
