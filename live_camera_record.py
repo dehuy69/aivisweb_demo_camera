@@ -11,6 +11,7 @@ def record():
         time.sleep(3600)
         recordProcess.kill()
         recordProcess.terminate()
+        time.sleep(2)
 
 if __name__=="__main__":
     record()
